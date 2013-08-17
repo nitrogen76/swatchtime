@@ -10,6 +10,6 @@ int main ()
     /* I specifically wanted "centibeats" hence the garbage with floats and 3 decimal places. */
     /* As I am a dumbshit at C, I will eventually make a commandline arg for this. */
     swatch = (float)(((sec + 3600) % 86400) * 1000) / 86400;
-    printf ("@%.3f\n", swatch);
+    printf ("@%06.3f\n", swatch);
     return 0;
 }
